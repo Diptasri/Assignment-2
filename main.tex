@@ -1,0 +1,90 @@
+\documentclass[twocolumn]{article}
+\usepackage{soul}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, right=2cm, top=50]{geometry}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\title{Ellipse}
+\author{Diptasri Ghosh}
+\date{EE21MTECH14004}
+
+\begin{document}
+
+\maketitle
+\textbf{\textit{Abstract} - This document contains solution of sketching loci of the given equation.}\\
+\begin{center}
+\textbf{\ul{Problem}}\\
+Vector-2, Example-4, Question No.-7
+\end{center}
+
+\textbf{Question 7. Sketch the loci of the following equation}\\
+\begin{equation}
+\frac{x^2}{4} + \frac{y^2}{9} = 1
+\end{equation}
+\textbf{Solution :}\\
+Given equation is,
+\begin{equation}
+\frac{x^2}{4} + \frac{y^2}{9} = 1
+\end{equation}
+We can write equation (2) as,
+\begin{equation}
+9 x^2 + 4 y^2 - 36 = 0
+\end{equation}
+The general equation is given as,
+\begin{equation}
+\textbf{x}^\top \textbf{V} \textbf{x} + 2 \textbf{u}^\top \textbf{x} + f = 0 
+\end{equation}
+Comparing (3) and (4) we get,
+\begin{equation}
+\textbf{V} = \begin{pmatrix}
+9 & 0\\
+0 & 4\\
+\end{pmatrix} ,
+\textbf{u} = \begin{pmatrix}
+0\\
+0\\
+\end{pmatrix} , 
+f = -36
+\end{equation}
+The vertex of Ellipse is given as \textbf{c} and can be obtained from,
+\begin{equation}
+\textbf{c} = - \textbf{V}^-^1 \textbf{u}
+\end{equation}
+We know,
+\begin{equation}
+\textbf{V}^-^1 = \frac{1}{\begin{vmatrix}\textbf{V}\end{vmatrix}} Adj \textbf{V}
+\end{equation}
+Putting the values of \begin{vmatrix}\textbf{V}\end{vmatrix} and Adj \textbf{V} we get,
+\begin{equation}
+\textbf{V}^-^1 = \frac{1}{36} \begin{pmatrix}
+9 & 0\\
+0 & 4\\
+\end{pmatrix}^\top 
+ = \begin{pmatrix}
+0\\
+0\\
+\end{pmatrix}
+\end{equation}
+Putting values in equation (6) we get the vertex of the ellipse,
+\begin{equation}
+\textbf{c} = \begin{pmatrix}
+0\\
+0\\
+\end{pmatrix} 
+\end{equation}
+
+\begin{figure}[!ht]
+\includegraphics[width=\columnwidth]{Figure_1.png}
+\caption{Plot of the Ellipse with vertex \textbf{c} = \begin{pmatrix}
+0\\
+0\\
+\end{pmatrix}  }
+\label{fig}
+\end{figure}
+\end{document}
+
+
+
